@@ -1,0 +1,39 @@
+@import "../../../scss/utils.scss";
+@import "../../../scss/colors.scss";
+
+.appbarDesk {
+  display: flex;
+  gap: 2rem;
+  height: 5rem;
+
+  @include isSm {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  align-items: center;
+}
+
+.link {
+  font-weight: 500;
+}
+
+.active {
+  width: 50%;
+  height: 0.2rem;
+  background-color: $gray-11;
+  display: flex;
+  margin: auto;
+}

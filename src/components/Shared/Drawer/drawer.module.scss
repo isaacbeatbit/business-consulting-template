@@ -1,0 +1,19 @@
+@import "../../../scss/colors.scss";
+@import "../../../scss/utils.scss";
+
+.drawer {
+  display: none;
+}
+
+.visible {
+  @include isSm {
+    background-color: rgba($gray-13, 0.4);
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+}

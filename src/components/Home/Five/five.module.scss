@@ -1,0 +1,142 @@
+@import "../../../scss/utils.scss";
+@import "../../../scss/colors.scss";
+
+.container {
+  background-color: #f0efea;
+  padding: 3rem 0;
+}
+
+.wrapper {
+  @include mediaQueries;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+// one
+.one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.oneHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.caption {
+  color: #fa6c44;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.description {
+  color: $gray-8;
+}
+
+// two
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+
+  @include isMd {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include isXs {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  background-color: $gray-1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: 0.3s ease-in-out background-color;
+  padding: 2rem 1.5rem;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $gold-4;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.itemWithIcon {
+  .icon {
+    transition: 0.3s ease-in-out transform;
+    cursor: pointer;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    .icon {
+      transform: rotate(-45deg);
+      background-color: $gray-1;
+      svg {
+        fill: $gray-13;
+      }
+    }
+  }
+}
+
+.itemTitle {
+  font-weight: 600;
+}
+
+.itemDesc {
+  color: $gray-8;
+}
+
+// CTA button
+.ctaBtn {
+  width: max-content;
+}
+
+// three
+.three {
+  display: grid;
+  width: 100%;
+  border-top: solid thin $gray-6;
+  border-bottom: solid thin $gray-6;
+  padding: 2rem 0;
+  justify-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include isMd {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// numbers
+.numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 4rem;
+}
+
+.text {
+  color: $gray-8;
+}

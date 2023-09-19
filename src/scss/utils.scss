@@ -1,0 +1,152 @@
+@import "./colors.scss";
+
+@mixin mediaQueries {
+  @media (min-width: 1440px) {
+    max-width: 1040px;
+    margin: auto;
+  }
+  @media (max-width: 1439px) {
+    margin: 0 200px;
+  }
+  @media (max-width: 1239px) {
+    max-width: 840px;
+    margin: auto;
+  }
+  @media (max-width: 904px) {
+    margin: 0 32px;
+  }
+  @media (max-width: 599px) {
+    margin: 0 16px;
+  }
+}
+
+@mixin isXl {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin isLg {
+  @media (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin isMd {
+  @media (max-width: 1239px) {
+    @content;
+  }
+}
+
+@mixin isSm {
+  @media (max-width: 904px) {
+    @content;
+  }
+}
+
+@mixin isXs {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+// buttons ⬇️
+
+// normal button
+.button {
+  border-radius: 2rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: transparent;
+}
+
+.primaryButton {
+  background-color: $gold-5;
+  color: $gray-11;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gold-6;
+  }
+}
+
+.secondaryButton {
+  background-color: $gray-11;
+  color: $gray-1;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gray-9;
+  }
+}
+
+.transparentButton {
+  background-color: transparent;
+  color: $gray-11;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gray-5;
+  }
+}
+
+.outlinedButton {
+  color: $gray-11;
+  border: solid thin $gray-11;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gray-5;
+  }
+}
+
+.largeButton {
+  height: 2.5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  min-width: max-content;
+}
+
+// icon button
+.iconButton {
+  display: flex;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: none;
+  transition: 0.3s ease-in-out background-color;
+}
+
+.darkIconButton {
+  background-color: $gray-13;
+}
+
+.transparentIconButton {
+  background-color: transparent;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gray-5;
+  }
+}
+
+.mediumIconButton {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

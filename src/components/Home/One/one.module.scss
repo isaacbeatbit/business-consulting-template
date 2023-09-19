@@ -1,0 +1,71 @@
+@import "../../../scss/utils.scss";
+@import "../../../scss/colors.scss";
+
+.container {
+  background-color: rgb(241, 241, 239);
+}
+
+.content {
+  @include mediaQueries;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  padding-top: 4rem;
+
+  @include isMd {
+    grid-template-columns: 45% 55%;
+    padding-top: 3rem;
+  }
+
+  @include isSm {
+    grid-template-columns: auto;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  @include isXs {
+    grid-template-columns: auto;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.description {
+  color: $gray-8;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.image {
+  align-self: center;
+  justify-self: center;
+  object-fit: contain;
+
+  @include isMd {
+    width: 400px;
+    height: 450px;
+  }
+
+  @include isSm {
+    width: 400px;
+    height: 450px;
+  }
+
+  @include isXs {
+    width: 300px;
+    height: 350px;
+  }
+}

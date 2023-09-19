@@ -1,0 +1,45 @@
+@import "../../../scss/utils.scss";
+
+.appbarHeader {
+  display: flex;
+  height: 2rem;
+  align-items: center;
+
+  @include isLg {
+    display: none;
+  }
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.link {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.socialList {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+}
+
+// utils
+.spacer {
+  flex-grow: 1;
+}
+
+.divider {
+  margin: 0 0.5rem;
+}

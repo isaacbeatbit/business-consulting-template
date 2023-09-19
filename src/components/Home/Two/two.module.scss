@@ -1,0 +1,20 @@
+@import "../../../scss/utils.scss";
+
+.container {
+  @include mediaQueries;
+}
+
+.logos {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+
+  @include isSm {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include isXs {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

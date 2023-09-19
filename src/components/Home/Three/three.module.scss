@@ -1,0 +1,66 @@
+@import "../../../scss/utils.scss";
+@import "../../../scss/colors.scss";
+
+.container {
+  @include mediaQueries;
+
+  border: solid thin $gray-5;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+
+  @include isLg {
+    gap: 2rem;
+  }
+
+  @include isSm {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.caption {
+  color: #fa6c44;
+  font-weight: 500;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+// items
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @include isXs {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.itemTitle {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.itemDesc {
+  color: $gray-7;
+}

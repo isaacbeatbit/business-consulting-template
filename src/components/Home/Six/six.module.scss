@@ -1,0 +1,99 @@
+@import "../../../scss/utils.scss";
+@import "../../../scss/colors.scss";
+
+.container {
+  @include mediaQueries;
+  display: grid;
+  padding: 3rem 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+
+  @include isSm {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+// left
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.leftHead {
+  display: flex;
+  flex-direction: column;
+}
+
+.caption {
+  font-weight: 600;
+  color: #fa6c44;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+// items
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  gap: 1rem;
+}
+
+.itemTitle {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.itemDesc {
+  color: $gray-8;
+}
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid thin $gray-6;
+  border-radius: 100%;
+  aspect-ratio: 1;
+}
+
+// right
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.image {
+  object-fit: cover;
+  width: 450px;
+  height: 450px;
+
+  @include isMd {
+    width: 412px;
+    height: 412px;
+  }
+
+  @include isSm {
+    width: 500px;
+    height: 350px;
+  }
+
+  @include isXs {
+    height: 250px;
+    width: 340px;
+  }
+}

@@ -1,0 +1,162 @@
+@import "../../../scss/colors.scss";
+@import "../../../scss/utils.scss";
+
+.container {
+  background-image: url("/illustrations/team-background.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  background-color: rgba($gold-4, 0.9);
+}
+
+.wrapper2 {
+  @include mediaQueries;
+  padding: 4rem 0;
+}
+
+.caption {
+  color: #fa6c44;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @include isXs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+.headerTitle {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+// items
+.items {
+  margin-top: 2rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 3rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemImg {
+  height: auto;
+  object-fit: cover;
+
+  @include isXl {
+    width: 220px;
+  }
+
+  @include isLg {
+    width: 220px;
+  }
+
+  @include isMd {
+    width: 270px;
+  }
+}
+
+.itemTitle {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.itemCaption {
+  color: $gray-8;
+}
+
+// reviews
+.reviews {
+  background-color: $gray-1;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+
+  @include isSm {
+    padding: 3rem 2rem;
+  }
+}
+
+.reviewsTitle {
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.reviewsItems {
+  display: flex;
+  overflow-x: auto;
+  margin-top: 3rem;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40rem;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.star {
+  display: flex;
+
+  svg {
+    fill: #fa6c44;
+  }
+}
+
+.reviewText {
+  font-weight: 600;
+}
+
+.reviewImg {
+  border-radius: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.reviewBottom {
+  display: flex;
+  gap: 1rem;
+  width: 18rem;
+  margin-top: 1rem;
+}
+
+.reviewName {
+  font-weight: 600;
+}
+
+.reviewPos {
+  color: #fa6c44;
+}
+
+.reviewsButton {
+  margin-top: 2rem;
+  svg {
+    fill: #fff;
+  }
+}

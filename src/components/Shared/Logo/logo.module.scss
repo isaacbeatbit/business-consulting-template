@@ -1,0 +1,29 @@
+.miniLogo {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logoTitle {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.logoSubtitle {
+  font-size: 0.75rem;
+}
