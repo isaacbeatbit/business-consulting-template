@@ -6,90 +6,89 @@ const About = () => (
   <div className={styles.about}>
     <Logo />
     <p className={styles.aboutDesc}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-      maxime quia natus aspernatur dignissimos possimus ipsum non a dolore
-      cumque exercitationem.
+      Somos una consultora de tecnología que ayuda a las empresas a crear y
+      escalar sus productos digitales en la nube.
     </p>
   </div>
 );
 
 const columns = [
   {
-    title: "Company",
+    title: "Compañía",
     links: [
       {
-        name: "About",
+        name: "Acerca de",
         href: "#",
       },
       {
-        name: "Features",
+        name: "Características",
         href: "#",
       },
       {
-        name: "Works",
+        name: "Cómo funciona",
         href: "#",
       },
       {
-        name: "Careers",
+        name: "Carreras",
         href: "#",
       },
     ],
   },
   {
-    title: "Help",
+    title: "Ayuda",
     links: [
       {
-        name: "Customer Support",
+        name: "Soporte al Cliente",
         href: "#",
       },
       {
-        name: "Delivery Details",
+        name: "Detalles de Entrega",
         href: "#",
       },
       {
-        name: "Terms & Conditions",
+        name: "Términos y Condiciones",
         href: "#",
       },
       {
-        name: "Privacy Policy",
+        name: "Política de Privacidad",
         href: "#",
       },
     ],
   },
   {
-    title: "Resources",
+    title: "Recursos",
     links: [
       {
-        name: "Free eBooks",
+        name: "eBooks Gratuitos",
         href: "#",
       },
       {
-        name: "Developer Tutorials",
+        name: "Tutoriales para Desarrolladores",
         href: "#",
       },
       {
-        name: "How to • Blog",
+        name: "Cómo hacer • Blog",
         href: "#",
       },
     ],
   },
   {
-    title: "Link",
+    title: "Enlaces",
     links: [
       {
-        name: "Free eBooks",
+        name: "eBooks Gratuitos",
         href: "#",
       },
       {
-        name: "Developer Tutorials",
+        name: "Tutoriales para Desarrolladores",
         href: "#",
       },
       {
-        name: "How to • Blog",
+        name: "Cómo hacer • Blog",
         href: "#",
       },
       {
-        name: "Youtube Playlist",
+        name: "Lista de Reproducción de YouTube",
         href: "#",
       },
     ],
@@ -117,7 +116,6 @@ export const Footer = () => (
         </div>
       </div>
     </div>
-
     <div className={styles.bottom}>
       <div className={styles.bottomContainer}>
         <p>&copy; 2023 CDMX - Agency Web</p>

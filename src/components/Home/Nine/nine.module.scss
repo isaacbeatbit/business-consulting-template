@@ -3,7 +3,7 @@
 
 .container {
   @include mediaQueries;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .caption {
@@ -35,8 +35,9 @@
   margin-top: 3rem;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  justify-items: center;
 
-  @include isMd {
+  @include isLg {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
@@ -50,14 +51,28 @@
 .item {
   display: flex;
   flex-direction: column;
-  position: relative;
   gap: 1rem;
+  width: 324px;
+
+  @include isLg {
+    width: 400px;
+  }
+  @include isMd {
+    width: 350px;
+  }
+  @include isSm {
+    width: 400px;
+  }
+
+  @include isXs {
+    width: 288px;
+  }
 }
 
 .hide {
   display: none;
 
-  @include isMd {
+  @include isLg {
     display: inherit;
   }
 
@@ -67,25 +82,26 @@
 }
 
 .itemImg {
-  width: 100%;
-  height: auto;
-}
+  margin: auto;
+  width: 324px;
+  height: 216px;
 
-.date {
-  position: absolute;
-  height: 4rem;
-  width: 3rem;
-  background-color: $gold-5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  left: 1.5rem;
-  top: 1.5rem;
+  @include isLg {
+    width: 400px;
+    height: 267px;
+  }
 
-  :first-child {
-    font-weight: 600;
+  @include isMd {
+    width: 350px;
+    height: 234px;
+  }
+  @include isSm {
+    width: 400px;
+    height: 267px;
+  }
+  @include isXs {
+    width: 288px;
+    height: 193px;
   }
 }
 

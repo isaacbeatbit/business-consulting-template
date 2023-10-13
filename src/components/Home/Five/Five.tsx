@@ -3,55 +3,57 @@ import styles from "./five.module.scss";
 
 const items = [
   {
-    title: "Business Advice",
+    title: "Asesoramiento empresarial",
     description:
-      "Deliver faster and more reliable business outcomes. We help you scale your business, improve performance and increase ROI.",
+      "Navegue hacia el éxito con estrategias y dirección experta, impulsando crecimiento y eficiencia en su negocio.",
   },
   {
-    title: "Startup business",
+    title: "Creación de Empresas",
     description:
-      "Deliver faster and more reliable business outcomes. We help you scale your business, improve performance and increase ROI.",
+      "Iniciamos negocios sólidos desde cero, ademas brindando el conocimiento y apoyo necesario para el arranque exitoso de su empresa y su crecimiento.",
   },
   {
-    title: "Financial Advice",
+    title: "Asesoramiento Financiero",
     description:
-      "Deliver faster and more reliable business outcomes. We help you scale your business, improve performance and increase ROI.",
+      "Soluciones financieras personalizadas para alcanzar sus metas económicas, maximizando sus activos y recursos financieros.",
   },
   {
-    title: "Risk Management",
+    title: "Gestión de riesgos",
     description:
-      "Deliver faster and more reliable business outcomes. We help you scale your business, improve performance and increase ROI.",
+      "Identificamos y mitigamos riesgos comerciales de manera efectiva, protegiendo su inversión y reputación corporativa en el mercado.",
   },
 ];
 
 const numbers = [
   {
     number: 5310,
-    text: "Happy Client",
+    text: "Clientes felices",
   },
   {
     number: 5310,
-    text: "Complete Project",
+    text: "Proyectos terminados",
   },
   {
     number: 5310,
-    text: "Running Project",
+    text: "Proyectos en curso",
   },
   {
     number: 5310,
-    text: "Winning Awards",
+    text: "Premios ganados",
   },
 ];
 
 const One = () => (
   <div className={styles.one}>
     <div className={styles.oneHeader}>
-      <span className={styles.caption}>Our services</span>
-      <p className={styles.title}>We Provide The Best Service For Consulting</p>
+      <span className={styles.caption}>Nuestros servicios</span>
+      <p className={styles.title}>
+        Ofrecemos los mejores servicios de consultoria
+      </p>
     </div>
     <p className={styles.description}>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sapiente
-      provident maiores.
+      Encontrarás los mejores servicios de consultoria para tu empresa, con los
+      mejores profesionales del mercado.
     </p>
   </div>
 );
@@ -64,6 +66,7 @@ const Two = () => (
         <p className={styles.itemDesc}>{description}</p>
         <div className={styles.buttonContainer}>
           <button
+            aria-label="ir al servicio"
             className={`${styles.iconButton} ${styles.mediumIconButton} ${styles.darkIconButton} ${styles.icon}`}
           >
             <svg
@@ -101,7 +104,8 @@ export const Five = () => (
       <button
         className={`${styles.button} ${styles.largeButton} ${styles.outlinedButton} ${styles.ctaBtn}`}
       >
-        Browse Services <ArrowUpRight />
+        Ver todos los servicios
+        <ArrowUpRight />
       </button>
       <Three />
     </div>

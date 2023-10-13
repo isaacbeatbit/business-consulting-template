@@ -8,24 +8,26 @@
 .content {
   @include mediaQueries;
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 1fr 1fr;
   padding-top: 4rem;
+  justify-items: center;
+
+  @include isLg {
+    padding-top: 3rem;
+  }
 
   @include isMd {
-    grid-template-columns: 45% 55%;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   @include isSm {
     grid-template-columns: auto;
-    gap: 2rem;
     padding-top: 1rem;
+    gap: 2rem;
   }
 
   @include isXs {
     grid-template-columns: auto;
-    gap: 2rem;
-    padding-top: 1rem;
   }
 }
 
@@ -33,39 +35,59 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @include isLg {
+    padding-bottom: 3rem;
+  }
+  @include isSm {
+    padding-bottom: 0;
+  }
 }
 
 .title {
   font-size: 3.2rem;
   font-weight: 600;
+  text-wrap: wrap;
+
+  @include isXs {
+    font-size: 3rem;
+  }
 }
 
 .description {
   color: $gray-8;
+  text-wrap: wrap;
 }
 
 .buttons {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .image {
-  align-self: center;
-  justify-self: center;
+  height: 500px;
+  width: 395px;
   object-fit: contain;
+  align-self: end;
+
+  @include isLg {
+    height: 450px;
+    width: 356px;
+  }
 
   @include isMd {
-    width: 400px;
-    height: 450px;
+    height: 400px;
+    width: 317px;
   }
 
   @include isSm {
-    width: 400px;
-    height: 450px;
+    height: 380px;
+    width: 300;
   }
 
   @include isXs {
-    width: 300px;
-    height: 350px;
+    height: 365px;
+    width: 289px;
   }
 }

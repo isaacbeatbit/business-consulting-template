@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "@/components/Shared/Icons/Icons";
 import styles from "./eight.module.scss";
+import Image from "next/image";
 
 const members = [
   {
@@ -22,9 +23,15 @@ const members = [
 
 const Item = ({ src, alt }: { src: string; alt: string }) => (
   <div className={styles.item}>
-    <img src={`/illustrations/${src}`} alt={alt} className={styles.itemImg} />
+    <Image
+      src={`/illustrations/${src}`}
+      alt={alt}
+      className={styles.itemImg}
+      height={405}
+      width={270}
+    />
     <p className={styles.itemTitle}>Kimbery Hansen</p>
-    <span className={styles.itemCaption}>Senior Consultant</span>
+    <span className={styles.itemCaption}>Fundador de startups</span>
   </div>
 );
 
@@ -35,15 +42,6 @@ const Items = () => (
     ))}
   </div>
 );
-
-const reviews = [
-  {
-    stars: 5,
-    text: "",
-    name: "Randy Porter",
-    position: "CEO at Company",
-  },
-];
 
 const Stars = () => (
   <div className={styles.stars}>
@@ -73,7 +71,7 @@ const Review = () => (
       ipsum eu nunc commodo posuere et sit amet ligula.&quot;
     </p>
     <div className={styles.reviewBottom}>
-      <img
+      <Image
         src="/illustrations/avatar.avif"
         alt="avatar"
         width={64}
@@ -90,19 +88,20 @@ const Review = () => (
 
 const Reviews = () => (
   <div className={styles.reviews}>
-    <span className={styles.caption}>Testimonials</span>
-    <h3 className={styles.reviewsTitle}>What Our Clients Says</h3>
+    <span className={styles.caption}>Testimonios</span>
+    <p className={styles.reviewsTitle}>
+      &iquest;Que dicen nuestros clientes?
+    </p>
     <div className={styles.reviewsItems}>
-      {Array(3)
-        .fill(null)
-        .map((_, idx) => (
-          <Review key={idx} />
-        ))}
+      {[1, 2, 3].map((i) => (
+        <Review key={i} />
+      ))}
     </div>
     <button
       className={`${styles.button} ${styles.largeButton} ${styles.secondaryButton} ${styles.reviewsButton}`}
     >
-      All Reviews <ArrowUpRight />
+      Todas las opinones
+      <ArrowUpRight />
     </button>
   </div>
 );
@@ -111,17 +110,18 @@ export const Eight = () => (
   <div className={styles.container}>
     <div className={styles.wrapper}>
       <div className={styles.wrapper2}>
-        <span className={styles.caption}>Meet Our Team</span>
+        <span className={styles.caption}>Conoce a Nuestro Equipo</span>
         <div className={styles.header}>
           <p className={styles.headerTitle}>
-            Experience
+            Miembros Experimentados
             <br />
-            Teams Members
+            del Equipo
           </p>
           <button
             className={`${styles.button} ${styles.largeButton} ${styles.outlinedButton}`}
           >
-            Browse Services <ArrowUpRight />
+            Explorar Servicios
+            <ArrowUpRight />
           </button>
         </div>
         <Items />

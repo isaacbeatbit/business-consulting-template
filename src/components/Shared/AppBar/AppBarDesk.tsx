@@ -6,15 +6,15 @@ import { ArrowUpRight } from "../Icons/Icons";
 
 const items = [
   {
-    name: "Home",
+    name: "Inicio",
     href: "/",
   },
   {
-    name: "About",
+    name: "Nosotros",
     href: "#",
   },
   {
-    name: "Services",
+    name: "Servicios",
     href: "#",
   },
   {
@@ -22,7 +22,7 @@ const items = [
     href: "#",
   },
   {
-    name: "Contact",
+    name: "Contacto",
     href: "#",
   },
 ];
@@ -47,7 +47,7 @@ export const AppBarDesk = () => {
         <button
           className={`${styles.button} ${styles.primaryButton} ${styles.largeButton}`}
         >
-          Get consulting
+          Contactanos
           <ArrowUpRight />
         </button>
       </div>

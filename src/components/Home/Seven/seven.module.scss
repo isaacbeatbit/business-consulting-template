@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 // header
@@ -62,6 +62,19 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 504px;
+
+  @include isLg {
+    width: 404px;
+  }
+
+  @include isSm {
+    width: 400px;
+  }
+
+  @include isXs {
+    width: 288px;
+  }
 }
 
 .itemTitle {
@@ -71,8 +84,23 @@
 }
 
 .itemImg {
-  width: 100%;
-  height: auto;
+  width: 504px;
+  height: 336px;
+
+  @include isLg {
+    width: 404px;
+    height: 270px;
+  }
+
+  @include isSm {
+    width: 400px;
+    height: 267px;
+  }
+
+  @include isXs {
+    width: 288px;
+    height: 192px;
+  }
 }
 
 .date {

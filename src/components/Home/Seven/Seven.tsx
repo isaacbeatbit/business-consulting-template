@@ -2,22 +2,23 @@
 import { useState } from "react";
 import styles from "./seven.module.scss";
 import { ArrowUpRight } from "@/components/Shared/Icons/Icons";
+import Image from "next/image";
 
 const options = [
   {
-    name: "Discover All",
+    name: "Descubrir Todo",
   },
   {
-    name: "Business Advice",
+    name: "Asesoramiento Empresarial",
   },
   {
-    name: "Startup Business",
+    name: "Creacion de Empresas",
   },
   {
-    name: "Financial Advice",
+    name: "Asesoramiento Financiero",
   },
   {
-    name: "Risk Management",
+    name: "Manejo de Riesgo",
   },
 ];
 
@@ -42,12 +43,12 @@ const images = [
 
 const Header = () => (
   <div className={styles.header}>
-    <p className={styles.caption}>Projects & Cases Studies</p>
-    <h3 className={styles.title}>
-      Let&apos;s Looks
+    <p className={styles.caption}>Proyectos & estudios de caso</p>
+    <p className={styles.title}>
+      Mira nuestros
       <br />
-      Our Global Projects
-    </h3>
+      Proyectos globales
+    </p>
   </div>
 );
 
@@ -77,16 +78,23 @@ const Options = () => {
 
 const Item = ({ src, alt }: { src: string; alt: string }) => (
   <div className={styles.item}>
-    <img src={src} alt={alt} className={styles.itemImg} />
+    <Image
+      src={src}
+      alt={alt}
+      className={styles.itemImg}
+      height={288}
+      width={192}
+    />
     <p className={styles.itemTitle}>
-      Why your client needs a responsive website
+      &iquest;Por qué es importante la consultoría empresarial?
     </p>
     <div className={styles.itemBottom}>
-      <span className={styles.date}>April 30, 2020</span>
+      <span className={styles.date}>30 Abril, 2020</span>
       <button
         className={`${styles.button} ${styles.largeButton} ${styles.transparentButton}`}
       >
-        Read more <ArrowUpRight />
+        Leer más
+        <ArrowUpRight />
       </button>
     </div>
   </div>
@@ -108,7 +116,8 @@ export const Seven = () => (
     <button
       className={`${styles.button} ${styles.largeButton} ${styles.secondaryButton} ${styles.lastButton}`}
     >
-      All Recent Projects <ArrowUpRight />
+      Ver nuestros proyectos
+      <ArrowUpRight />
     </button>
   </div>
 );

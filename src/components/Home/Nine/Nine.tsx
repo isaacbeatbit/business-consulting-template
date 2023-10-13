@@ -1,55 +1,54 @@
 import { ArrowUpRight } from "@/components/Shared/Icons/Icons";
 import styles from "./nine.module.scss";
+import Image from "next/image";
 
 const images = [
   {
-    src: "code.avif",
+    src: "code.png",
     alt: "code",
   },
   {
-    src: "productivity.avif",
+    src: "productivity.png",
     alt: "productivity",
   },
   {
-    src: "dialog.avif",
+    src: "dialog.png",
     alt: "dialog",
   },
   {
-    src: "notes.avif",
+    src: "notes.png",
     alt: "notes",
   },
 ];
 
 const Item = ({ src, alt, idx }: { src: string; alt: string; idx: number }) => (
   <div className={`${styles.item} ${idx === 3 ? styles.hide : ""}`}>
-    <img src={`/illustrations/${src}`} alt={alt} className={styles.itemImg} />
-    <span className={styles.date}>
-      <span>25</span>
-      <span>Mar</span>
-    </span>
+    <Image width={288} height={193} src={`/illustrations/${src}`} alt={alt} className={styles.itemImg} />
     <span className={styles.tag}>Business</span>
     <p className={styles.itemTitle}>
-      Guide To Newly Supporte Modern CSS Pseudo
+      Guia para mejorar la productividad de tu equipo
     </p>
     <p>
-      Lorem impsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt.
+      En este articulo te mostramos como mejorar la productividad de tu equipo y
+      como hacer que tu equipo sea mas eficiente.
     </p>
   </div>
 );
 
 export const Nine = () => (
   <div className={styles.container}>
-    <span className={styles.caption}>Article & News</span>
+    <span className={styles.caption}>Articulos & noticias</span>
     <div className={styles.header}>
       <p className={styles.title}>
-        Get every single <br />
-        news & blogs
+        Ver todas las
+        <br />
+        noticias y blogs
       </p>
       <button
         className={`${styles.button} ${styles.largeButton} ${styles.outlinedButton}`}
       >
-        Browse Services <ArrowUpRight />
+        Explorar servicios
+        <ArrowUpRight />
       </button>
     </div>
     <div className={styles.items}>

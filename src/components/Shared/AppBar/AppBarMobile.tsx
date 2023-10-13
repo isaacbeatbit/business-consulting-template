@@ -9,15 +9,15 @@ import { usePathname } from "next/navigation";
 
 const links = [
   {
-    title: "Home",
+    title: "Inicio",
     href: "/",
   },
   {
-    title: "About",
+    title: "Nosotros",
     href: "#",
   },
   {
-    title: "Services",
+    title: "Servicios",
     href: "#",
   },
   {
@@ -25,7 +25,7 @@ const links = [
     href: "#",
   },
   {
-    title: "Contact",
+    title: "Contacto",
     href: "#",
   },
 ];
@@ -42,7 +42,7 @@ export const AppBarMobile = () => {
       <button
         className={`${styles.button} ${styles.primaryButton} ${styles.largeButton}`}
       >
-        Get consulting
+        Contactanos
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"

@@ -3,8 +3,8 @@ import styles from "./six.module.scss";
 
 const items = [
   {
-    title: "Process Excellence",
-    description: "Experts in process excellence and change management.",
+    title: "Exelencia en Procesos",
+    description: "Expertos en excelencia de procesos y gestión del cambio.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +18,8 @@ const items = [
     ),
   },
   {
-    title: "Strategic Planning",
-    description: "Experts in process excellence and change management.",
+    title: "Planeacion Estrategica",
+    description: "Estrategias de negocio y transformación digital.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +33,8 @@ const items = [
     ),
   },
   {
-    title: "Experience Design",
-    description: "Experts in process excellence and change management.",
+    title: "Experiencia en Diseño",
+    description: "Nuestro equipo cuenta con más de 10 años de experiencia.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +48,8 @@ const items = [
     ),
   },
   {
-    title: "Artificial Intelligence",
-    description: "Experts in process excellence and change management.",
+    title: "Inteligencia de Artificail",
+    description: "Nuestra agencia cuenta con expertos en IA y Machine Learning.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -67,11 +67,9 @@ const items = [
 const Left = () => (
   <div className={styles.left}>
     <div className={styles.leftHead}>
-      <span className={styles.caption}>Why Choose Us</span>
+      <span className={styles.caption}>&iquest;Por qué elegirnos?</span>
       <p className={styles.title}>
-        <span>Reasons Why We</span>
-        <span>are The Best Business</span>
-        <span>Consulting Agency</span>
+        Razones por las que somos la mejor agencia de consultoría empresarial
       </p>
     </div>
     <div className={styles.items}>
@@ -89,15 +87,13 @@ const Left = () => (
 );
 
 const Right = () => (
-  <div className={styles.right}>
-    <Image
-      className={styles.image}
-      src="/illustrations/working.avif"
-      width={300}
-      height={300}
-      alt="team working"
-    />
-  </div>
+  <Image
+    className={styles.image}
+    src="/illustrations/working.avif"
+    width={300}
+    height={300}
+    alt="team working"
+  />
 );
 
 export const Six = () => (

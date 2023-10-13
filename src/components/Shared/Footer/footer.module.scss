@@ -11,6 +11,16 @@
   padding: 3rem 0;
 }
 
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 2rem;
+
+  @include isLg {
+    grid-template-columns: 1fr;
+  }
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -19,17 +29,6 @@
 
 .aboutDesc {
   color: $gray-6;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: auto 70%;
-  gap: 1rem;
-
-  @include isMd {
-    gap: 2rem;
-    grid-template-columns: 1fr;
-  }
 }
 
 .columns {
@@ -41,6 +40,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     row-gap: 2rem;
+  }
+  @include isXs {
+    grid-template-columns: 1fr;
   }
 }
 

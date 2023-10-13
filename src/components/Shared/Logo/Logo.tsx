@@ -12,8 +12,8 @@ export const Logo = ({ extraClasses }: { extraClasses?: string }) => (
   <Link href="/" className={`${styles.logo} ${extraClasses}`}>
     <Image src="/logo.svg" width={50} height={50} alt="logo" />
     <span className={styles.logoTexts}>
-      <span className={styles.logoTitle}>Crito</span>
-      <span className={styles.logoSubtitle}>Agency business</span>
+      <span className={styles.logoTitle}>Simple web</span>
+      <span className={styles.logoSubtitle}>Agencia web</span>
     </span>
   </Link>
 );

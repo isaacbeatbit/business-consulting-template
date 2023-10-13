@@ -9,6 +9,7 @@ export const Menu = () => {
 
   return (
     <button
+    aria-label="menu"
       className={`${styles.iconButton} ${styles.mediumIconButton} ${styles.transparentIconButton}}`}
       onClick={handleClick}
     >

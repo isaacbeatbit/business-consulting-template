@@ -126,7 +126,11 @@ export const SocialIcons = ({ extraClasses }: { extraClasses?: string }) => (
   <ul className={styles.socialList}>
     {socialItems.map(({ icon, name, href }) => (
       <li key={name}>
-        <a href={href} className={`${styles.socialLink} ${extraClasses}`}>
+        <a
+          href={href}
+          className={`${styles.socialLink} ${extraClasses}`}
+          aria-label={name}
+        >
           {icon}
         </a>
       </li>

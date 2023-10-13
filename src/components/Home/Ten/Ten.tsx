@@ -4,21 +4,21 @@ import styles from "./ten.module.scss";
 export const Ten = () => (
   <div className={styles.container}>
     <div className={styles.wrapper}>
-      <h4 className={styles.title}>
-        Get update by
+      <p className={styles.title}>
+        Mantengase al dia
         <br />
-        signup newsletter
-      </h4>
+        registrate a nuestro boletin &#8594;
+      </p>
       <form className={styles.form}>
         <input
           className={styles.input}
           type="text"
-          placeholder="@your email..."
+          placeholder="@tu correo..."
         />
         <button
           className={`${styles.button} ${styles.primaryButton} ${styles.largeButton}`}
         >
-          Subscribe <ArrowUpRight />
+          Suscribirme <ArrowUpRight />
         </button>
       </form>
     </div>

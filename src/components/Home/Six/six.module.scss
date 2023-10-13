@@ -4,9 +4,11 @@
 .container {
   @include mediaQueries;
   display: grid;
-  padding: 3rem 0;
+  padding: 4rem 0;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
 
   @include isSm {
     gap: 3rem;
@@ -32,8 +34,6 @@
 }
 
 .title {
-  display: flex;
-  flex-direction: column;
   font-weight: 600;
   font-size: 2rem;
 }
@@ -70,30 +70,18 @@
   aspect-ratio: 1;
 }
 
-// right
-.right {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
 .image {
   object-fit: cover;
-  width: 450px;
-  height: 450px;
-
-  @include isMd {
-    width: 412px;
-    height: 412px;
-  }
+  width: 400px;
+  height: 400px;
 
   @include isSm {
-    width: 500px;
-    height: 350px;
+    width: 350px;
+    height: 233px;
   }
 
   @include isXs {
-    height: 250px;
-    width: 340px;
+    height: 192px;
+    width: 288px;
   }
 }

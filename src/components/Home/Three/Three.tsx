@@ -3,8 +3,9 @@ import styles from "./three.module.scss";
 
 const items = [
   {
-    title: "Business Advice",
-    description: "Essentially formula for how a business is going to complete.",
+    title: "Asesoramiento empresarial",
+    description:
+      "Guiamos a las empresas en la planificación y ejecución de estrategias para lograr sus metas.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +19,9 @@ const items = [
     ),
   },
   {
-    title: "Startup Business",
-    description: "Essentially formula for how a business is going to complete.",
+    title: "Creación de empresas",
+    description:
+      "Ofrecemos asistencia para el establecimiento y puesta en marcha de nuevos negocios.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +35,9 @@ const items = [
     ),
   },
   {
-    title: "Financial Advice",
-    description: "Essentially formula for how a business is going to complete.",
+    title: "Asesoramiento financiero",
+    description:
+      "Brindamos orientación experta en la gestión de recursos económicos y toma de decisiones financieras.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -48,8 +51,9 @@ const items = [
     ),
   },
   {
-    title: "Risk Management",
-    description: "Essentially formula for how a business is going to complete.",
+    title: "Gestión de riesgos",
+    description:
+      "Enfocados en identificar, evaluar y minimizar los riesgos potenciales que pueden afectar a una empresa.",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -67,14 +71,15 @@ const items = [
 export const Three = () => (
   <div className={styles.container}>
     <div className={styles.one}>
-      <span className={styles.caption}>Features</span>
+      <span className={styles.caption}>Caracteristicas</span>
       <p className={styles.title}>
-        Less Accounting is trusted by thousand of companies
+        Cientos de negocios confian en nosotros para su crecimiento y desarrollo
       </p>
       <button
         className={`${styles.button} ${styles.primaryButton} ${styles.largeButton}`}
       >
-        Learn more <ArrowUpRight />
+        Descubrir más
+        <ArrowUpRight />
       </button>
     </div>
     <div className={styles.items}>

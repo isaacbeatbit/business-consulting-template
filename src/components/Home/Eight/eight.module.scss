@@ -5,10 +5,11 @@
   background-image: url("/illustrations/team-background.avif");
   background-size: cover;
   background-position: center;
+  margin: 2rem 0;
 }
 
 .wrapper {
-  background-color: rgba($gold-4, 0.9);
+  background-color: rgba($gold-3, 0.9);
 }
 
 .wrapper2 {
@@ -45,6 +46,7 @@
   display: flex;
   overflow-x: auto;
   gap: 3rem;
+  justify-content: space-between;
 }
 
 .item {
@@ -53,19 +55,13 @@
 }
 
 .itemImg {
-  height: auto;
+  height: 330px;
+  width: 220px;
   object-fit: cover;
-
-  @include isXl {
-    width: 220px;
-  }
-
-  @include isLg {
-    width: 220px;
-  }
 
   @include isMd {
     width: 270px;
+    height: 405px;
   }
 }
 

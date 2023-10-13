@@ -24,16 +24,23 @@
   gap: 2rem;
   height: 100%;
   align-items: center;
+
+  @include isMd {
+    gap: 1.5rem;
+  }
 }
 
 .link {
   font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .active {
-  width: 50%;
-  height: 0.2rem;
   background-color: $gray-11;
-  display: flex;
-  margin: auto;
+  width: 60%;
+  height: 0.2rem;
+  position: absolute;
+  bottom: -0.2rem;
 }

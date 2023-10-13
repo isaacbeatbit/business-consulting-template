@@ -3,7 +3,6 @@
 
 .container {
   @include mediaQueries;
-
   border: solid thin $gray-5;
   padding: 2rem;
   display: grid;
