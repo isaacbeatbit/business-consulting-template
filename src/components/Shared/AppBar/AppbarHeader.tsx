@@ -2,7 +2,7 @@ import styles from "./appbarHeader.module.scss";
 
 const items = [
   {
-    info: "+52 55 1234 5678",
+    info: "+52 56 1003 5474",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ const items = [
     ),
   },
   {
-    info: "hola@isaaclop.com",
+    info: "hola@progreweb.com",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

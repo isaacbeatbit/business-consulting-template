@@ -4,15 +4,15 @@ import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "500", "600", "700"],
+  weight: ["500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Agencia de desarrollo web en México | Simple web",
+  title: "Agencia de desarrollo web en México | Progressiweb",
   description:
     "Descubre una agencia de desarrollo web en México. Entra y conoce nuestros servicios de diseño y desarrollo web.",
   openGraph: {
-    title: "Agencia de desarrollo web en México | Simple web",
+    title: "Agencia de desarrollo web en México | Progressiweb",
     description:
       "Descubre una agencia de desarrollo web en México. Entra y conoce nuestros servicios de diseño y desarrollo web.",
     images: "/illustrations/teaching.avif",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  readonly children: React.ReactNode;
 }) {
   return (
     <html lang="en">

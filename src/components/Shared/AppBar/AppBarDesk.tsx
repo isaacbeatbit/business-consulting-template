@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import { Logo } from "../Logo/Logo";
 import styles from "./appbarDesk.module.scss";
 import { ArrowUpRight } from "../Icons/Icons";
+import Link from "next/link";
 
 const items = [
   {
@@ -37,10 +38,10 @@ export const AppBarDesk = () => {
         <ul className={styles.list}>
           {items.map(({ name, href }) => (
             <li key={name}>
-              <a href="#" className={styles.link}>
+              <Link href={href} className={styles.link}>
                 {name}
                 <span className={pathname === href ? styles.active : ""} />
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
